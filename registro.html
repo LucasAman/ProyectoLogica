@@ -40,26 +40,31 @@
         </header>
         <section class="section">
             <div class="texto">
-                <h2>Información</h2>
+                <h2>Registrate a nuestro newsletter</h2>
             </div>
-            <div class="text-informacion">
-                <p class="p-info">
-                    En este sitio, encontrarás una rica fuente de conocimiento sobre cuatro aspectos clave:
-                </p>    
-                <ul>
-                    <li>Discografía: Explora las discografías completas de tus artistas favoritos y descubre nuevos talentos. Te proporcionamos información detallada sobre álbumes, sencillos, fechas de lanzamiento y enlaces para escuchar sus obras maestras.</li>
-                    <li>Artistas: Conoce a los músicos que dan vida a la música que amas. Desde sus biografías hasta su evolución artística, te ofrecemos una visión profunda de las vidas y carreras de los artistas más influyentes y prometedores.</li>
-                    <li>Conciertos: ¿Eres un apasionado de la música en vivo? Te mantenemos al tanto de los conciertos y eventos musicales más emocionantes. Encuentra información sobre fechas, lugares, entradas y mucho más para que nunca te pierdas un espectáculo en tu área.</li>
-                    <li>Géneros Musicales: La música abarca una amplia gama de géneros, cada uno con su propio sonido y estilo únicos. En esta sección, te sumergirás en el mundo de la música clasificada por géneros, explorando desde el jazz al rock, desde el hip-hop al country, y mucho más.</li>
-                </ul>
-                <p class="p-info">
-                    Nuestro objetivo es proporcionarte una experiencia integral para satisfacer tus necesidades de conocimiento musical. Ya sea que busques detalles sobre la discografía de tu banda favorita, información sobre un artista emergente, los próximos conciertos en tu área o una inmersión en tu género musical preferido, estamos aquí para ayudarte a navegar por el mundo de la música con facilidad.
-                </p>
-                <p class="p-info">
-                    ¡Esperamos que disfrutes explorando nuestros contenidos y que encuentres toda la información que necesitas para alimentar tu pasión por la música!
-                </p>
+            <div class="form-container">
+                <form id="registration-form">
+                    <div class="input-field">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="interest">Área de Interés</label>
+                        <select id="interest" name="interest" required>
+                            <option value="">Seleccione</option>
+                            <option value="music">Música</option>
+                            <option value="concert">Conciertos</option>
+                            <option value="artist">Artistas</option>
+                            <option value="news">Todo</option>
+                        </select>
+                    </div>
+                    <button type="submit">Registrarse</button>
+                </form>
             </div>
-            
         </section>
         <footer class="footer">
             <div class="pie_pag">
@@ -67,6 +72,6 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="./js/registro.js"></script>
 </body>
 </html>

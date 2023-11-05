@@ -154,6 +154,13 @@ body {
                 height: 500px;
                 width: 100%;
             }
+            .articles a {
+                color: #fff;
+                text-decoration: none;
+            }
+            .articles a:hover {
+                color: #ff00bf;
+            }
             
         
     .footer {
@@ -257,6 +264,16 @@ button[type="reset"] {
     #opcion-correcta {
         font-size: 25px;
     }
+.art {
+    padding: 15px;
+    background-color: #B54306;
+}
+.p-art {
+    font-size: 20px;
+    color: #000;
+}
+
+
 @media all and (max-width:800px) {
     .menu {
         flex-direction: column;
